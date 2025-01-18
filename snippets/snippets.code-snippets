@@ -3,6 +3,150 @@
     "prefix": "!init",
     "scope": "css,scss,postcss,less",
     "body": [
+      "/* Reset CSS */",
+      "*, *::before, *::after {",
+      "\t box-sizing: border-box;",
+      "\t margin: 0;",
+      "\t padding: 0;",
+      "}",
+      "",
+      "html {",
+      "\t line-height: 1.15;",
+      "\t -webkit-text-size-adjust: 100%;",
+      "\t -moz-tab-size: 4;",
+      "\t tab-size: 4;",
+      "}",
+      "",
+      "body {",
+      "\t margin: 0;",
+      "\t line-height: inherit;",
+      "}",
+      "",
+      "hr {",
+      "\t height: 0;",
+      "\t color: inherit;",
+      "}",
+      "",
+      "abbr[title] {",
+      "\t text-decoration: underline dotted;",
+      "}",
+      "",
+      "b, strong {",
+      "\t font-weight: bolder;",
+      "}",
+      "",
+      "code, kbd, samp, pre {",
+      "\t font-family: ui-monospace, monospace;",
+      "\t font-size: 1em;",
+      "}",
+      "",
+      "small {",
+      "\t font-size: 80%;",
+      "}",
+      "",
+      "sub, sup {",
+      "\t font-size: 75%;",
+      "\t line-height: 0;",
+      "\t position: relative;",
+      "\t vertical-align: baseline;",
+      "}",
+      "",
+      "sub {",
+      "\t bottom: -0.25em;",
+      "}",
+      "",
+      "sup {",
+      "\t top: -0.5em;",
+      "}",
+      "",
+      "table {",
+      "\t text-indent: 0;",
+      "\t border-color: inherit;",
+      "\t border-collapse: collapse;",
+      "}",
+      "",
+      "button, input, optgroup, select, textarea {",
+      "\t font-family: inherit;",
+      "\t font-size: 100%;",
+      "\t line-height: inherit;",
+      "\t color: inherit;",
+      "\t margin: 0;",
+      "\t padding: 0;",
+      "}",
+      "",
+      "button, select {",
+      "\t text-transform: none;",
+      "}",
+      "",
+      "button, [type='button'], [type='reset'], [type='submit'] {",
+      "\t -webkit-appearance: button;",
+      "}",
+      "",
+      "::-moz-focus-inner {",
+      "\t border-style: none;",
+      "\t padding: 0;",
+      "}",
+      "",
+      ":-moz-focusring {",
+      "\t outline: 1px dotted ButtonText;",
+      "}",
+      "",
+      ":-moz-ui-invalid {",
+      "\t box-shadow: none;",
+      "}",
+      "",
+      "progress {",
+      "\t vertical-align: baseline;",
+      "}",
+      "",
+      "::-webkit-inner-spin-button, ::-webkit-outer-spin-button {",
+      "\t height: auto;",
+      "}",
+      "",
+      "[type='search'] {",
+      "\t -webkit-appearance: textfield;",
+      "\t outline-offset: -2px;",
+      "}",
+      "",
+      "::-webkit-search-decoration {",
+      "\t -webkit-appearance: none;",
+      "}",
+      "",
+      "::-webkit-file-upload-button {",
+      "\t -webkit-appearance: button;",
+      "\t font: inherit;",
+      "}",
+      "",
+      "summary {",
+      "\t display: list-item;",
+      "}",
+      "",
+      "blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {",
+      "\t margin: 0;",
+      "}",
+      "",
+      "fieldset {",
+      "\t margin: 0;",
+      "\t padding: 0;",
+      "}",
+      "",
+      "legend {",
+      "\t padding: 0;",
+      "}",
+      "",
+      "ol, ul, menu {",
+      "\t list-style: none;",
+      "\t margin: 0;",
+      "\t padding: 0;",
+      "}",
+      "",
+      "img, svg, video, canvas, audio, iframe, embed, object {",
+      "\t display: block;",
+      "\t vertical-align: middle;",
+      "\t max-width: 100%;",
+      "\t height: auto;",
+      "}",
+      "",
       "/* Font Imports */",
       "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');",
       "",
@@ -108,21 +252,6 @@
       "\t --breakpoint-xxl: 1600px;",
       "}",
       "",
-      "/* Base Reset and Typography */",
-      "*, *::before, *::after {",
-      "\t box-sizing: border-box;",
-      "\t margin: 0;",
-      "\t padding: 0;",
-      "}",
-      "",
-      "/* Responsive Typography */",
-      "h1, .h1 { font-size: clamp(30px, 8vw, 80px); }",
-      "h2, .h2 { font-size: clamp(22.5px, 6vw, 60px); }",
-      "h3, .h3 { font-size: clamp(18.75px, 5vw, 50px); }",
-      "h4, .h4 { font-size: clamp(11.25px, 3vw, 30px); }",
-      "h5, .h5 { font-size: clamp(9.375px, 2vw, 25px); }",
-      "h6, .h6 { font-size: clamp(10px, 2vw, 20px); }",
-      "",
       "/* Base HTML Setup */",
       "html {",
       "\t height: 100%;",
@@ -145,8 +274,6 @@
       "\t text-rendering: optimizeLegibility;",
       "\t -webkit-overflow-scrolling: touch;",
       "\t -webkit-text-size-adjust: 100%;",
-      "\t -webkit-user-select: none;",
-      "\t user-select: none;",
       "\t touch-action: manipulation;",
       "}",
       "",
@@ -205,48 +332,6 @@
     "description": "Initialize project with complete CSS setup including typography, root variables, and base HTML optimizations"
   },
 
-  "full-bg": {
-    "prefix": "s-full-bg",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      "html {",
-      "\t background: url('$1') no-repeat center center fixed;",
-      "\t -webkit-background-size: cover;",
-      "\t -moz-background-size: cover;",
-      "\t -o-background-size: cover;",
-      "\t background-size: cover;",
-      "}"
-    ],
-    "description": "Создает полноэкранный респонсивный фон для HTML-документа. Изображение автоматически масштабируется, сохраняя пропорции, и занимает весь экран с учетом различных браузеров."
-  },
-
-  "center-flex": {
-    "prefix": "s-center-flex",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      ".$class{",
-      "\t display: flex;",
-      "\t justify-content: center;",
-      "\t align-items: center;",
-      "}"
-    ],
-    "description": "Центрирует содержимое элемента как по горизонтали, так и по вертикали, используя flexbox. Это современный и гибкий способ центрирования, который хорошо работает с различными типами контента."
-  },
-
-  "center-absolute": {
-    "prefix": "s-center-absolute",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      ".$class{",
-      "\t position: absolute;",
-      "\t top: 50%;",
-      "\t left: 50%;",
-      "\t transform: translate(-50%, -50%);",
-      "}"
-    ],
-    "description": "Центрирует элемент абсолютным позиционированием с помощью transform. Этот метод подходит для случаев, когда flexbox не применим или нужно центрировать элемент относительно родителя с position: relative."
-  },
-
   "div.background": {
     "prefix": "s-div.background",
     "scope": "css,scss,postcss,less",
@@ -259,21 +344,21 @@
       "\t /* height: 500px; */",
       "}"
     ],
-    "description": "Создает div с фоновым изображением, которое масштабируется под размер контейнера. Изображение фиксируется при прокрутке (background-attachment: fixed) и центрируется."
+    "description": "Example/Пример:\n\n.hero-section {\n\tbackground: url('/images/hero.jpg');\n\tbackground-size: cover;\n\tbackground-position: center center;\n\tbackground-attachment: fixed;\n}\n\nEnglish:\nCreates a div with a background image that scales to fit the container size. The image is fixed during scrolling (background-attachment: fixed) and centered. Commonly used for creating parallax effects or full-screen background sections.\n\nРусский:\nСоздает div с фоновым изображением, которое масштабируется под размер контейнера. Изображение фиксируется при прокрутке (background-attachment: fixed) и центрируется. Часто используется для создания эффекта параллакса или полноэкранных секций с фоном."
   },
 
   "media-min": {
     "prefix": "s-media-min",
     "scope": "css,scss,postcss,less",
     "body": ["@media only screen and (min-width: $1 ){", "\t $2", "}"],
-    "description": "Создает медиа-запрос для стилей, которые применяются при ширине экрана больше указанного значения. Полезно для адаптивного дизайна по принципу Mobile First."
+    "description": "Example/Пример:\n\n@media only screen and (min-width: 768px) {\n\t.container {\n\t\tmax-width: 720px;\n\t}\n}\n\nEnglish:\nCreates a media query for styles that apply when the screen width is larger than the specified value. Useful for responsive design following the Mobile First principle.\n\nРусский:\nСоздает медиа-запрос для стилей, которые применяются при ширине экрана больше указанного значения. Полезно для адаптивного дизайна по принципу Mobile First."
   },
 
   "media-max": {
     "prefix": "s-media-max",
     "scope": "css,scss,postcss,less",
     "body": ["@media only screen and (max-width: $1 ){", "\t $2", "}"],
-    "description": "Создает медиа-запрос для стилей, которые применяются при ширине экрана меньше указанного значения. Используется для адаптации дизайна под мобильные устройства."
+    "description": "Example/Пример:\n\n@media only screen and (max-width: 767px) {\n\t.navigation {\n\t\tdisplay: none;\n\t}\n}\n\nEnglish:\nCreates a media query for styles that apply when the screen width is smaller than the specified value. Used for adapting design to mobile devices.\n\nРусский:\nСоздает медиа-запрос для стилей, которые применяются при ширине экрана меньше указанного значения. Используется для адаптации дизайна под мобильные устройства."
   },
 
   "animation": {
@@ -289,7 +374,7 @@
       "\t }",
       "}"
     ],
-    "description": "Создает шаблон для CSS-анимации с использованием @keyframes. Позволяет определить начальное (0%) и конечное (100%) состояния анимации."
+    "description": "Example/Пример:\n\n@keyframes fadeIn {\n\t0% {\n\t\topacity: 0;\n\t\ttransform: translateY(-20px);\n\t}\n\t100% {\n\t\topacity: 1;\n\t\ttransform: translateY(0);\n\t}\n}\n\nEnglish:\nCreates a template for CSS animation using @keyframes. Allows you to define the initial (0%) and final (100%) states of the animation. Commonly used for creating smooth transitions and visual effects.\n\nРусский:\nСоздает шаблон для CSS-анимации с использованием @keyframes. Позволяет определить начальное (0%) и конечное (100%) состояния анимации. Часто используется для создания плавных переходов и визуальных эффектов."
   },
 
   "theme-toggle": {
@@ -308,7 +393,7 @@
       "\t --text-secondary: #a7a7a7;",
       "}"
     ],
-    "description": "Реализует переключение между светлой и темной темами с помощью CSS-переменных. Включает основные цветовые переменные для фона и текста в обеих темах."
+    "description": "Example/Пример:\n\n/* CSS Variables */\n:root {\n\t--background: #ffffff;\n\t--text-primary: #000000;\n}\n\n/* Usage Example */\n.card {\n\tbackground: var(--background);\n\tcolor: var(--text-primary);\n}\n\nEnglish:\nImplements light and dark theme switching using CSS variables. Includes basic color variables for background and text in both themes. The theme can be toggled by adding the data-theme='dark' attribute to the HTML element.\n\nРусский:\nРеализует переключение между светлой и темной темами с помощью CSS-переменных. Включает основные цветовые переменные для фона и текста в обеих темах. Тема переключается добавлением атрибута data-theme='dark' к HTML элементу."
   },
 
   "aspect-ratio": {
@@ -321,7 +406,7 @@
       "\t object-fit: cover;",
       "}"
     ],
-    "description": "Устанавливает фиксированное соотношение сторон для элемента (по умолчанию 16:9). Полезно для изображений, видео и других медиа-элементов, чтобы избежать искажений при масштабировании."
+    "description": "Example/Пример:\n\n.video-container {\n\taspect-ratio: 16 / 9;\n\twidth: 100%;\n\tobject-fit: cover;\n}\n\n/* Common ratios:\n * 16:9 - Widescreen video\n * 4:3  - Traditional screens\n * 1:1  - Square images\n * 21:9 - Ultrawide\n */\n\nEnglish:\nSets a fixed aspect ratio for an element (default 16:9). Useful for images, videos, and other media elements to prevent distortion during scaling. The aspect-ratio property maintains proportions while resizing.\n\nРусский:\nУстанавливает фиксированное соотношение сторон для элемента (по умолчанию 16:9). Полезно для изображений, видео и других медиа-элементов, чтобы избежать искажений при масштабировании. Свойство aspect-ratio сохраняет пропорции при изменении размера."
   },
 
   "tooltip": {
@@ -355,7 +440,7 @@
       "\t visibility: visible;",
       "}"
     ],
-    "description": "Создает всплывающую подсказку при наведении на элемент. Подсказка появляется плавно, поддерживает многострочный текст и автоматически центрируется относительно элемента."
+    "description": "Example/Пример:\n\n<button data-tooltip=\"Click me to save\">Save</button>\n\n/* Additional styling options:\n * white-space: normal; - for multiline tooltips\n * width: 200px; - for fixed width tooltips\n * z-index: 1000; - to ensure tooltip appears above other elements\n */\n\nEnglish:\nCreates a tooltip that appears when hovering over an element. The tooltip fades in smoothly, supports multiline text, and automatically centers relative to the element. Uses data attributes for easy implementation without additional JavaScript.\n\nРусский:\nСоздает всплывающую подсказку при наведении на элемент. Подсказка появляется плавно, поддерживает многострочный текст и автоматически центрируется относительно элемента. Использует data-атрибуты для простой реализации без дополнительного JavaScript."
   },
 
   "card-hover": {
@@ -378,7 +463,7 @@
       "\t\t 0 2px 4px -1px rgba(0,0,0,0.06);",
       "}"
     ],
-    "description": "Создает карточку с эффектом при наведении: плавное поднятие и появление тени. Использует переменные CSS для цветов и включает плавные переходы для всех эффектов."
+    "description": "Example/Пример:\n\n.card {\n\t--background: #ffffff;\n\tposition: relative;\n\tbackground: var(--background);\n\tborder-radius: 12px;\n\tpadding: 20px;\n\ttransition: all 0.3s ease;\n\tborder: 1px solid rgba(0,0,0,0.1);\n}\n\n/* Usage in HTML:\n<div class=\"card\">\n\t<h3>Card Title</h3>\n\t<p>Card content goes here</p>\n</div>\n*/\n\nEnglish:\nCreates a card with hover effects: smooth elevation and shadow appearance. Uses CSS variables for colors and includes smooth transitions for all effects. Perfect for interactive content blocks, product cards, or feature sections.\n\nРусский:\nСоздает карточку с эффектом при наведении: плавное поднятие и появление тени. Использует переменные CSS для цветов и включает плавные переходы для всех эффектов. Идеально подходит для интерактивных блоков контента, карточек товаров или секций с функциями."
   },
 
   "hamburger-menu": {
@@ -419,7 +504,7 @@
       "\t top: 9px;",
       "}"
     ],
-    "description": "Создает анимированную иконку гамбургер-меню с тремя полосками, которые превращаются в крестик при активации. Включает плавные переходы и поддерживает состояния hover и active."
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"hamburger\" onclick=\"this.classList.toggle('active')\">\n\t<span></span>\n\t<span></span>\n\t<span></span>\n</div>\n\n/* JavaScript Toggle (Optional)\n document.querySelector('.hamburger').addEventListener('click', function() {\n\tthis.classList.toggle('active');\n });\n*/\n\nEnglish:\nCreates an animated hamburger menu icon with three bars that transform into a cross (X) when activated. Includes smooth transitions and supports hover and active states. Uses CSS variables for color theming and requires minimal JavaScript for toggle functionality.\n\nРусский:\nСоздает анимированную иконку гамбургер-меню с тремя полосками, которые превращаются в крестик при активации. Включает плавные переходы и поддерживает состояния hover и active. Использует CSS-переменные для темизации цветов и требует минимального JavaScript для функционала переключения."
   },
 
   "input-floating": {
@@ -460,7 +545,7 @@
       "\t color: var(--color-primary);",
       "}"
     ],
-    "description": "Создает поле ввода с плавающим лейблом в стиле Material Design. Лейбл перемещается вверх при фокусе или когда поле содержит текст."
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"form-group\">\n\t<input type=\"text\" id=\"name\" placeholder=\" \">\n\t<label for=\"name\">Your Name</label>\n</div>\n\n/* CSS Variables Setup:\n:root {\n\t--color-primary: #007bff;\n}\n*/\n\nEnglish:\nCreates an input field with a floating label in Material Design style. The label smoothly transitions to the top when the input is focused or contains text. Features include animated transitions, placeholder support, and customizable colors through CSS variables.\n\nРусский:\nСоздает поле ввода с плавающим лейблом в стиле Material Design. Лейбл плавно перемещается вверх при фокусе или когда поле содержит текст. Включает анимированные переходы, поддержку плейсхолдера и настраиваемые цвета через CSS-переменные."
   },
 
   "skeleton-loading": {
@@ -484,7 +569,7 @@
       "\t min-height: 20px;",
       "}"
     ],
-    "description": "Создает анимированный скелетон-загрузчик с градиентным эффектом. Используется для отображения загружаемого контента и улучшения UX."
+    "description": "Example/Пример:\n\n<!-- Card with Skeleton Loading -->\n<div class=\"card\">\n\t<div class=\"skeleton\" style=\"height: 200px;\"></div>\n\t<div style=\"padding: 16px;\">\n\t\t<div class=\"skeleton\" style=\"width: 60%; height: 24px; margin-bottom: 12px;\"></div>\n\t\t<div class=\"skeleton\" style=\"width: 100%; height: 16px; margin-bottom: 8px;\"></div>\n\t\t<div class=\"skeleton\" style=\"width: 80%; height: 16px;\"></div>\n\t</div>\n</div>\n\n/* Dark Theme Support:\n[data-theme='dark'] .skeleton {\n\tbackground: linear-gradient(90deg,\n\t\t#2a2a2a 25%,\n\t\t#3a3a3a 37%,\n\t\t#2a2a2a 63%\n\t);\n}\n*/\n\nEnglish:\nCreates an animated skeleton loader with a gradient effect. Used to display loading content and improve UX. The animation creates a smooth wave-like effect moving from right to left, simulating content loading. Supports dark theme customization and can be applied to various element sizes.\n\nРусский:\nСоздает анимированный скелетон-загрузчик с градиентным эффектом. Используется для отображения загружаемого контента и улучшения UX. Анимация создает плавный волнообразный эффект, движущийся справа налево, имитируя загрузку контента. Поддерживает настройку темной темы и может применяться к элементам различных размеров."
   },
 
   "scroll-snap": {
@@ -506,7 +591,7 @@
       "\t height: 100%;",
       "}"
     ],
-    "description": "Реализует контейнер с горизонтальной прокруткой и привязкой к элементам. Обеспечивает плавную прокрутку и точную остановку на элементах."
+    "description": "Example/Пример:\n\n<!-- Horizontal Scroll Snap Container -->\n<div class=\"scroll-container\">\n\t<div class=\"scroll-item\">\n\t\t<img src=\"slide1.jpg\" alt=\"Slide 1\">\n\t</div>\n\t<div class=\"scroll-item\">\n\t\t<img src=\"slide2.jpg\" alt=\"Slide 2\">\n\t</div>\n\t<div class=\"scroll-item\">\n\t\t<img src=\"slide3.jpg\" alt=\"Slide 3\">\n\t</div>\n</div>\n\n/* Additional Options:\n.scroll-container {\n\t/* For vertical scrolling */\n\t/* scroll-snap-type: y mandatory; */\n\n\t/* For both directions */\n\t/* scroll-snap-type: both mandatory; */\n\n\t/* Optional snap points */\n\t/* scroll-snap-type: x proximity; */\n}\n*/\n\nEnglish:\nImplements a container with horizontal scroll snapping functionality. Provides smooth scrolling and precise stopping at elements. Perfect for image galleries, slideshows, or horizontal content navigation. Includes touch support and cross-browser compatibility.\n\nРусский:\nРеализует контейнер с горизонтальной прокруткой и привязкой к элементам. Обеспечивает плавную прокрутку и точную остановку на элементах. Идеально подходит для галерей изображений, слайд-шоу или горизонтальной навигации по контенту. Включает поддержку сенсорных устройств и кросс-браузерную совместимость."
   },
 
   "gradient-text": {
@@ -528,7 +613,7 @@
       "\t 100% { background-position: 0% 50%; }",
       "}"
     ],
-    "description": "Создает текст с анимированным градиентным фоном. Градиент плавно перемещается, создавая эффектный визуальный элемент."
+    "description": "Example/Пример:\n\n<!-- HTML -->\n<h1 class=\"gradient-title\">Awesome Title</h1>\n\n/* Custom Gradients Examples:\n.warm-gradient {\n\tbackground: linear-gradient(45deg, #ff9a9e, #fad0c4);\n}\n\n.cool-gradient {\n\tbackground: linear-gradient(45deg, #4facfe, #00f2fe);\n}\n\n.rainbow-gradient {\n\tbackground: linear-gradient(45deg, \n\t\t#ff0000, #ff8000, \n\t\t#ffff00, #00ff00, \n\t\t#0000ff, #4b0082, \n\t\t#9400d3\n\t);\n}\n*/\n\nEnglish:\nCreates text with an animated gradient background. The gradient smoothly transitions, creating an eye-catching visual element. Supports custom color combinations and animation speeds. Note: For better browser compatibility, always include both -webkit-background-clip and background-clip properties.\n\nРусский:\nСоздает текст с анимированным градиентным фоном. Градиент плавно перемещается, создавая эффектный визуальный элемент. Поддерживает пользовательские комбинации цветов и скорости анимации. Примечание: Для лучшей совместимости с браузерами всегда включайте оба свойства: -webkit-background-clip и background-clip."
   },
 
   "custom-scrollbar-minimal": {
@@ -557,7 +642,7 @@
       "\t background-color: #555;",
       "}"
     ],
-    "description": "Стилизует полосу прокрутки, делая ее более тонкой и минималистичной. Поддерживает как WebKit, так и Firefox браузеры."
+    "description": "Example/Пример:\n\n/* Dark Theme Version */\n[data-theme='dark'] {\n\tscrollbar-color: #555 #1a1a1a;\n}\n\n[data-theme='dark'] *::-webkit-scrollbar-thumb {\n\tbackground-color: #555;\n}\n\n[data-theme='dark'] *::-webkit-scrollbar-track {\n\tbackground: #1a1a1a;\n}\n\n/* Custom Colors Example */\n.custom-scroll {\n\tscrollbar-color: var(--scroll-thumb) var(--scroll-track);\n}\n\n/* Browser Support:\n * Firefox: scrollbar-width & scrollbar-color\n * Webkit (Chrome, Safari, Edge): ::-webkit-scrollbar selectors\n * IE: Not supported\n */\n\nEnglish:\nStyles the scrollbar to be thinner and more minimalistic. Supports both WebKit and Firefox browsers. Features customizable colors, hover effects, and dark theme support. The scrollbar remains functional while being visually less intrusive.\n\nРусский:\nСтилизует полосу прокрутки, делая ее более тонкой и минималистичной. Поддерживает как WebKit, так и Firefox браузеры. Включает настраиваемые цвета, эффекты при наведении и поддержку темной темы. Полоса прокрутки остается функциональной, будучи визуально менее заметной."
   },
 
   "grid-container": {
@@ -571,7 +656,7 @@
       "\t padding: 1rem;",
       "}"
     ],
-    "description": "Создает адаптивный грид-контейнер с автоматическим размещением элементов. Колонки автоматически подстраиваются под доступное пространство."
+    "description": "Example/Пример:\n\n<!-- Basic Grid Layout -->\n<div class=\"grid-container\">\n\t<div class=\"grid-item\">Item 1</div>\n\t<div class=\"grid-item\">Item 2</div>\n\t<div class=\"grid-item\">Item 3</div>\n</div>\n\n/* Common Grid Patterns:\n\n// Fixed number of columns\n.grid-fixed {\n\tgrid-template-columns: repeat(4, 1fr);\n}\n\n// Auto-fill vs Auto-fit\n.grid-auto-fill {\n\tgrid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n}\n\n// With min-max constraints\n.grid-responsive {\n\tgrid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));\n}\n\n// With dense packing\n.grid-dense {\n\tgrid-auto-flow: dense;\n}\n*/\n\nEnglish:\nCreates a responsive grid container with automatic item placement. Columns automatically adjust to available space with a minimum width of 250px. Perfect for card layouts, image galleries, or any responsive grid-based design. Features gap control and automatic responsiveness without media queries.\n\nРусский:\nСоздает адаптивный грид-контейнер с автоматическим размещением элементов. Колонки автоматически подстраиваются под доступное пространство с минимальной шириной 250px. Идеально подходит для карточных макетов, галерей изображений или любого адаптивного дизайна на основе сетки. Включает контроль отступов и автоматическую адаптивность без медиа-запросов."
   },
 
   "truncate-text": {
@@ -585,7 +670,7 @@
       "\t max-width: 100%;",
       "}"
     ],
-    "description": "Обрезает текст, добавляя многоточие в конце, если он не помещается в контейнер. Текст остается в одной строке."
+    "description": "Example/Пример:\n\n<!-- Single Line Truncation -->\n<div class=\"truncate-text\">\n\tThis is a very long text that will be truncated with an ellipsis when it exceeds the container width\n</div>\n\n/* Common Variations:\n\n// Multi-line truncation (line clamp)\n.truncate-multiline {\n\tdisplay: -webkit-box;\n\t-webkit-line-clamp: 2;\n\t-webkit-box-orient: vertical;\n\toverflow: hidden;\n\twhite-space: normal;\n}\n\n// With custom width\n.truncate-custom {\n\tmax-width: 200px;\n}\n\n// With tooltip on hover\n.truncate-with-tooltip {\n\tposition: relative;\n}\n.truncate-with-tooltip:hover::before {\n\tcontent: attr(title);\n\tposition: absolute;\n\ttop: 100%;\n\tleft: 0;\n\tbackground: #fff;\n\tpadding: 5px;\n\tborder: 1px solid #ddd;\n\tborder-radius: 4px;\n\twhite-space: normal;\n\tz-index: 1;\n}\n*/\n\nEnglish:\nTruncates text with an ellipsis (...) when it exceeds the container width. Text remains on a single line. Includes variations for multi-line truncation, custom widths, and tooltip functionality. Perfect for headings, card titles, or any text that needs to fit in a confined space.\n\nРусский:\nОбрезает текст, добавляя многоточие (...) в конце, если он не помещается в контейнер. Текст остается в одной строке. Включает варианты для многострочного обрезания, пользовательской ширины и функциональности всплывающих подсказок. Идеально подходит для заголовков, названий карточек или любого текста, который должен поместиться в ограниченном пространстве."
   },
 
   "glassmorphism": {
@@ -601,7 +686,7 @@
       "\t box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);",
       "}"
     ],
-    "description": "Создает эффект матового стекла с размытием фона. Включает тонкую обводку и легкую тень для создания современного визуального эффекта."
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"glass-card\">\n\t<h2>Glass Card</h2>\n\t<p>Content goes here</p>\n</div>\n\n/* Required Background Setup:\nbody {\n\tbackground: linear-gradient(45deg, #ff6b6b, #4ecdc4);\n\tmin-height: 100vh;\n}\n\n/* Dark Theme Variant:\n.glass-dark {\n\tbackground: rgba(0, 0, 0, 0.2);\n\tborder: 1px solid rgba(255, 255, 255, 0.1);\n}\n\n/* Stronger Blur Effect:\n.glass-strong {\n\tbackdrop-filter: blur(16px);\n\t-webkit-backdrop-filter: blur(16px);\n\tbackground: rgba(255, 255, 255, 0.1);\n}\n\n/* Browser Support Note:\n * backdrop-filter is supported in:\n * Chrome 76+, Safari 9+, Firefox 70+\n * Use @supports (backdrop-filter: blur()) for fallbacks\n */\n*/\n\nEnglish:\nCreates a frosted glass effect with background blur. Includes subtle border and shadow for a modern visual effect. Best used on containers with colorful or image backgrounds. Features customizable blur intensity and color schemes. Note: Requires backdrop-filter support.\n\nРусский:\nСоздает эффект матового стекла с размытием фона. Включает тонкую обводку и легкую тень для создания современного визуального эффекта. Лучше всего использовать на контейнерах с цветным фоном или изображениями. Поддерживает настройку интенсивности размытия и цветовых схем. Примечание: Требует поддержки backdrop-filter."
   },
 
   "responsive-image": {
@@ -615,7 +700,7 @@
       "\t object-fit: cover;",
       "}"
     ],
-    "description": "Делает изображение адаптивным, автоматически масштабируя его под размер контейнера при сохранении пропорций."
+    "description": "Example/Пример:\n\n<!-- Basic Responsive Image -->\n<img class=\"responsive-img\" src=\"image.jpg\" alt=\"Description\">\n\n/* Common Image Patterns:\n\n// Aspect Ratio Container\n.img-container {\n\taspect-ratio: 16/9;\n\tposition: relative;\n}\n.img-container img {\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\tobject-fit: cover;\n}\n\n// Different object-fit options\n.img-contain {\n\tobject-fit: contain; /* Keeps entire image visible */\n}\n.img-fill {\n\tobject-fit: fill; /* Stretches to fill */\n}\n\n// Lazy Loading\n.lazy-img {\n\tloading: lazy;\n\t/* Add blur-up effect */\n\tfilter: blur(5px);\n\ttransition: filter 0.3s;\n}\n.lazy-img.loaded {\n\tfilter: blur(0);\n}\n*/\n\nEnglish:\nMakes images responsive by automatically scaling them to fit their container while maintaining aspect ratio. Features object-fit for better image coverage, lazy loading support, and various aspect ratio handling options. Perfect for responsive layouts, galleries, and content-heavy pages.\n\nРусский:\nДелает изображения адаптивными, автоматически масштабируя их под размер контейнера при сохранении пропорций. Включает object-fit для лучшего покрытия области, поддержку отложенной загрузки и различные варианты обработки соотношения сторон. Идеально подходит для адаптивных макетов, галерей и страниц с большим количеством контента."
   },
 
   "smooth-transition": {
@@ -631,7 +716,7 @@
       "\t box-shadow: 0 5px 15px rgba(0,0,0,0.3);",
       "}"
     ],
-    "description": "Добавляет плавный эффект перехода при наведении, включающий подъем элемента и появление тени. Все изменения происходят плавно."
+    "description": "Example/Пример:\n\n<!-- Basic Usage -->\n<div class=\"hover-card\">\n\t<h3>Hover Me</h3>\n</div>\n\n/* Common Transition Patterns:\n\n// Specific Properties Transition\n.specific-transition {\n\ttransition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n// Scale Effect\n.scale-hover {\n\ttransition: transform 0.3s ease;\n}\n.scale-hover:hover {\n\ttransform: scale(1.05);\n}\n\n// Fade Effect\n.fade-hover {\n\topacity: 0.8;\n\ttransition: opacity 0.3s ease;\n}\n.fade-hover:hover {\n\topacity: 1;\n}\n\n// Multiple Transforms\n.complex-hover {\n\ttransition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.complex-hover:hover {\n\ttransform: translateY(-5px) rotate(2deg);\n}\n*/\n\nEnglish:\nAdds a smooth transition effect on hover, including element elevation and shadow appearance. All changes occur smoothly with customizable timing and easing. Perfect for interactive elements like cards, buttons, and image containers. Features performant transitions using transform and opacity properties.\n\nРусский:\nДобавляет плавный эффект перехода при наведении, включающий подъем элемента и появление тени. Все изменения происходят плавно с настраиваемыми временем и функцией плавности. Идеально подходит для интерактивных элементов, таких как карточки, кнопки и контейнеры изображений. Использует производительные переходы с помощью свойств transform и opacity."
   },
 
   "custom-checkbox": {
@@ -689,7 +774,7 @@
       "\t transform: rotate(45deg);",
       "}"
     ],
-    "description": "Создает кастомный чекбокс с анимированной галочкой. Включает состояния hover и checked, полностью настраиваемый внешний вид."
+    "description": "Example/Пример:\n\n<!-- Basic Checkbox -->\n<label class=\"checkbox-wrapper\">\n\t<input type=\"checkbox\">\n\t<span class=\"checkmark\"></span>\n\tCustom Checkbox\n</label>\n\n/* CSS Variables Setup:\n:root {\n\t--color-primary: #2196F3;\n\t--checkbox-size: 25px;\n\t--check-color: white;\n}\n\n/* Accessibility Enhancement:\n.checkbox-wrapper input:focus-visible ~ .checkmark {\n\toutline: 2px solid #000;\n\toutline-offset: 2px;\n}\n\n/* Different Styles:\n// Square Checkbox\n.checkbox-square .checkmark {\n\tborder-radius: 0;\n}\n\n// Circle Checkbox\n.checkbox-circle .checkmark {\n\tborder-radius: 50%;\n}\n\n// Animation\n.checkbox-animated .checkmark:after {\n\ttransition: all 0.2s ease-in-out;\n\ttransform: rotate(45deg) scale(0);\n}\n.checkbox-animated input:checked ~ .checkmark:after {\n\ttransform: rotate(45deg) scale(1);\n}\n*/\n\nEnglish:\nCreates a custom checkbox with an animated checkmark. Includes hover and checked states with fully customizable appearance. Features keyboard accessibility, various shape options, and smooth animations. Uses CSS custom properties for easy theming.\n\nРусский:\nСоздает кастомный чекбокс с анимированной галочкой. Включает состояния наведения и отмеченности с полностью настраиваемым внешним видом. Поддерживает доступность с клавиатуры, различные варианты форм и плавные анимации. Использует CSS-переменные для легкой смены темы."
   },
 
   "loading-spinner": {
@@ -709,6 +794,299 @@
       "\t animation: spinner 1s linear infinite;",
       "}"
     ],
-    "description": "Создает анимированный спиннер загрузки в виде вращающегося круга. Использует CSS-переменные для цветов и поддерживает кастомизацию."
+    "description": "Example/Пример:\n\n<!-- Basic Spinner -->\n<div class=\"loading\" role=\"status\">\n\t<span class=\"sr-only\">Loading...</span>\n</div>\n\n/* CSS Variables Setup:\n:root {\n\t--color-primary: #2196F3;\n\t--spinner-size: 50px;\n\t--spinner-border-width: 4px;\n}\n\n/* Accessibility Enhancement:\n.sr-only {\n\tposition: absolute;\n\twidth: 1px;\n\theight: 1px;\n\tpadding: 0;\n\tmargin: -1px;\n\toverflow: hidden;\n\tclip: rect(0,0,0,0);\n\tborder: 0;\n}\n\n/* Different Variants:\n// Small Spinner\n.loading-sm {\n\twidth: 30px;\n\theight: 30px;\n\tborder-width: 2px;\n}\n\n// Large Spinner\n.loading-lg {\n\twidth: 70px;\n\theight: 70px;\n\tborder-width: 6px;\n}\n\n// Different Animation Speed\n.loading-fast {\n\tanimation-duration: 0.6s;\n}\n.loading-slow {\n\tanimation-duration: 1.4s;\n}\n\n// Dual Color Spinner\n.loading-dual {\n\tborder: 4px double;\n\tborder-color: var(--color-primary) transparent;\n}\n*/\n\nEnglish:\nCreates an animated loading spinner in the form of a rotating circle. Uses CSS variables for colors and supports customization. Features accessibility attributes, size variants, and animation speed options. Perfect for indicating loading states in applications.\n\nРусский:\nСоздает анимированный спиннер загрузки в виде вращающегося круга. Использует CSS-переменные для цветов и поддерживает кастомизацию. Включает атрибуты доступности, варианты размеров и настройки скорости анимации. Идеально подходит для индикации состояний загрузки в приложениях."
+  },
+
+  "custom-input": {
+    "prefix": "s-custom-input",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      ".input-wrapper {",
+      "\t position: relative;",
+      "\t display: inline-block;",
+      "\t width: 100%;",
+      "}",
+      "",
+      ".input {",
+      "\t position: relative;",
+      "\t display: inline-block;",
+      "\t width: 100%;",
+      "\t min-width: 0;",
+      "\t padding: 4px 11px;",
+      "\t font-size: 14px;",
+      "\t line-height: 1.5715;",
+      "\t background-color: var(--input-bg, #fff);",
+      "\t border: 1px solid var(--input-border-color, #d9d9d9);",
+      "\t border-radius: 2px;",
+      "\t transition: all 0.3s;",
+      "}",
+      "",
+      ".input:hover {",
+      "\t border-color: var(--input-hover-border-color, #40a9ff);",
+      "}",
+      "",
+      ".input:focus {",
+      "\t border-color: var(--input-focus-border-color, #40a9ff);",
+      "\t box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);",
+      "\t outline: 0;",
+      "}",
+      "",
+      ".input:disabled {",
+      "\t color: var(--input-disabled-color, rgba(0, 0, 0, 0.25));",
+      "\t background-color: var(--input-disabled-bg, #f5f5f5);",
+      "\t cursor: not-allowed;",
+      "\t opacity: 1;",
+      "}",
+      "",
+      ".input-prefix {",
+      "\t position: absolute;",
+      "\t top: 50%;",
+      "\t left: 12px;",
+      "\t transform: translateY(-50%);",
+      "\t line-height: 0;",
+      "\t color: var(--input-icon-color, rgba(0, 0, 0, 0.45));",
+      "}",
+      "",
+      ".input-suffix {",
+      "\t position: absolute;",
+      "\t top: 50%;",
+      "\t right: 12px;",
+      "\t transform: translateY(-50%);",
+      "\t line-height: 0;",
+      "\t color: var(--input-icon-color, rgba(0, 0, 0, 0.45));",
+      "}",
+      "",
+      ".has-prefix {",
+      "\t padding-left: 30px;",
+      "}",
+      "",
+      ".has-suffix {",
+      "\t padding-right: 30px;",
+      "}",
+      "",
+      ".input-wrapper.error .input {",
+      "\t border-color: var(--input-error-color, #ff4d4f);",
+      "}",
+      "",
+      ".input-wrapper.error .input:focus {",
+      "\t box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- Basic Input -->\n<div class=\"input-wrapper\">\n\t<input type=\"text\" class=\"input\" placeholder=\"Basic usage\">\n</div>\n\n<!-- Input with prefix icon -->\n<div class=\"input-wrapper\">\n\t<span class=\"input-prefix\">$</span>\n\t<input type=\"text\" class=\"input has-prefix\" placeholder=\"Enter amount\">\n</div>\n\n/* CSS Variables:\n:root {\n\t--input-bg: #fff;\n\t--input-border-color: #d9d9d9;\n\t--input-hover-border-color: #40a9ff;\n\t--input-focus-border-color: #40a9ff;\n\t--input-disabled-color: rgba(0, 0, 0, 0.25);\n\t--input-disabled-bg: #f5f5f5;\n\t--input-icon-color: rgba(0, 0, 0, 0.45);\n\t--input-error-color: #ff4d4f;\n}\n*/\n\nEnglish:\nAnt Design styled input field with support for prefix/suffix icons, states (hover, focus, disabled, error), and full keyboard accessibility. Based on Ant Design 4.x specifications.\n\nРусский:\nПоле ввода в стиле Ant Design с поддержкой префиксных/суффиксных иконок, состояний (наведение, фокус, отключено, ошибка) и полной доступностью с клавиатуры. Основано на спецификациях Ant Design 4.x."
+  },
+
+  "custom-radio": {
+    "prefix": "s-custom-radio",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      ".radio-wrapper {",
+      "\t position: relative;",
+      "\t display: inline-flex;",
+      "\t align-items: center;",
+      "\t margin-right: 8px;",
+      "\t cursor: pointer;",
+      "}",
+      "",
+      ".radio-input {",
+      "\t position: absolute;",
+      "\t opacity: 0;",
+      "}",
+      "",
+      ".radio-inner {",
+      "\t position: relative;",
+      "\t display: inline-block;",
+      "\t width: 16px;",
+      "\t height: 16px;",
+      "\t border: 1px solid var(--radio-border-color, #d9d9d9);",
+      "\t border-radius: 50%;",
+      "\t background-color: var(--radio-bg, #fff);",
+      "\t transition: all 0.3s;",
+      "}",
+      "",
+      ".radio-inner::after {",
+      "\t content: '';",
+      "\t position: absolute;",
+      "\t top: 50%;",
+      "\t left: 50%;",
+      "\t width: 8px;",
+      "\t height: 8px;",
+      "\t border-radius: 50%;",
+      "\t background-color: var(--radio-primary, #1890ff);",
+      "\t transform: translate(-50%, -50%) scale(0);",
+      "\t transition: transform 0.2s ease-in-out;",
+      "}",
+      "",
+      ".radio-input:checked + .radio-inner {",
+      "\t border-color: var(--radio-primary, #1890ff);",
+      "}",
+      "",
+      ".radio-input:checked + .radio-inner::after {",
+      "\t transform: translate(-50%, -50%) scale(1);",
+      "}",
+      "",
+      ".radio-input:focus-visible + .radio-inner {",
+      "\t box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);",
+      "}",
+      "",
+      ".radio-wrapper:hover .radio-inner {",
+      "\t border-color: var(--radio-primary, #1890ff);",
+      "}",
+      "",
+      ".radio-input:disabled + .radio-inner {",
+      "\t background-color: var(--radio-disabled-bg, #f5f5f5);",
+      "\t border-color: var(--radio-disabled-border, #d9d9d9);",
+      "\t cursor: not-allowed;",
+      "}",
+      "",
+      ".radio-label {",
+      "\t padding-left: 8px;",
+      "\t color: var(--radio-text-color, rgba(0, 0, 0, 0.85));",
+      "\t font-size: 14px;",
+      "\t line-height: 1;",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- Basic Radio -->\n<label class=\"radio-wrapper\">\n\t<input type=\"radio\" class=\"radio-input\" name=\"group\" value=\"1\">\n\t<span class=\"radio-inner\"></span>\n\t<span class=\"radio-label\">Option 1</span>\n</label>\n\n/* CSS Variables:\n:root {\n\t--radio-border-color: #d9d9d9;\n\t--radio-bg: #fff;\n\t--radio-primary: #1890ff;\n\t--radio-disabled-bg: #f5f5f5;\n\t--radio-disabled-border: #d9d9d9;\n\t--radio-text-color: rgba(0, 0, 0, 0.85);\n}\n*/\n\nEnglish:\nAnt Design styled custom radio button with hover, focus, and disabled states. Features smooth animations and full keyboard accessibility support. Based on Ant Design 4.x specifications.\n\nРусский:\nКастомная радиокнопка в стиле Ant Design с состояниями наведения, фокуса и отключения. Включает плавные анимации и полную поддержку доступности с клавиатуры. Основано на спецификациях Ant Design 4.x."
+  },
+  "container-queries": {
+    "prefix": "s-container-query",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      ".adaptive-card {",
+      "\t container-type: inline-size;",
+      "\t container-name: card;",
+      "}",
+      "",
+      "@container card (min-width: 400px) {",
+      "\t .card-content {",
+      "\t\t display: grid;",
+      "\t\t grid-template-columns: 2fr 1fr;",
+      "\t\t gap: 1rem;",
+      "\t }",
+      "}",
+      "",
+      "@container card (max-width: 399px) {",
+      "\t .card-content {",
+      "\t\t display: flex;",
+      "\t\t flex-direction: column;",
+      "\t\t gap: 0.5rem;",
+      "\t }",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"adaptive-card\">\n\t<div class=\"card-content\">\n\t\t<div class=\"main-content\">\n\t\t\t<h2>Card Title</h2>\n\t\t\t<p>Card description goes here...</p>\n\t\t</div>\n\t\t<div class=\"card-image\">\n\t\t\t<img src=\"image.jpg\" alt=\"Card image\">\n\t\t</div>\n\t</div>\n</div>\n\n/* Additional Styles:\n.main-content {\n\tpadding: 1rem;\n}\n\n.card-image img {\n\twidth: 100%;\n\theight: 100%;\n\tobject-fit: cover;\n}\n\n// Можно добавить больше брейкпоинтов\n@container card (min-width: 600px) {\n\t.card-content {\n\t\tgrid-template-columns: 3fr 1fr;\n\t}\n}\n*/\n\nEnglish:\nImplements modern Container Queries for component-level responsive design. Unlike traditional media queries that react to viewport size, container queries allow components to adapt based on their parent container's size. Perfect for reusable components that need to be responsive regardless of their position in the layout.\n\nРусский:\nРеализует современные Container Queries для адаптивного дизайна на уровне компонентов. В отличие от традиционных медиа-запросов, которые реагируют на размер viewport, container queries позволяют компонентам адаптироваться на основе размера их родительского контейнера. Идеально подходит для переиспользуемых компонентов, которым нужна адаптивность независимо от их положения в макете."
+  },
+
+  "scroll-timeline": {
+    "prefix": "s-scroll-animation",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      "@scroll-timeline scroll-progress {",
+      "\t source: selector('.content');",
+      "\t scroll-offsets: 0%, 100%;",
+      "\t time-range: 1s;",
+      "}",
+      "",
+      ".progress-bar {",
+      "\t transform-origin: left;",
+      "\t animation: grow linear;",
+      "\t animation-timeline: scroll-progress;",
+      "}",
+      "",
+      "@keyframes grow {",
+      "\t from {",
+      "\t\t transform: scaleX(0);",
+      "\t }",
+      "\t to {",
+      "\t\t transform: scaleX(1);",
+      "\t }",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"content\">\n\t<div class=\"progress-bar\"></div>\n\t<article>\n\t\t<h1>Long Article Title</h1>\n\t\t<p>Article content...</p>\n\t</article>\n</div>\n\n/* Additional Styles:\n.content {\n\tposition: relative;\n\theight: 100vh;\n\toverflow-y: auto;\n}\n\n.progress-bar {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\theight: 4px;\n\tbackground: #2196F3;\n\tz-index: 1000;\n}\n\n// Варианты анимации\n.progress-bar.smooth {\n\tanimation-timing-function: ease-out;\n}\n\n// Вертикальный прогресс\n.progress-vertical {\n\tposition: fixed;\n\tleft: 0;\n\ttop: 0;\n\tbottom: 0;\n\twidth: 4px;\n\ttransform-origin: top;\n\tanimation: growVertical linear;\n}\n\n@keyframes growVertical {\n\tfrom { transform: scaleY(0); }\n\tto { transform: scaleY(1); }\n}\n*/\n\nEnglish:\nImplements the new Scroll Timeline API for creating scroll-linked animations. Perfect for progress indicators, parallax effects, and interactive scroll-based animations. The animation is synchronized with the scroll position, providing smooth and performant scroll-driven animations.\n\nРусский:\nРеализует новый Scroll Timeline API для создания анимаций, связанных с прокруткой. Идеально подходит для индикаторов прогресса, эффекта параллакса и интерактивных анимаций на основе прокрутки. Анимация синхронизирована с позицией прокрутки, обеспечивая плавные и производительные анимации.\n\nBrowser Support/Поддержка браузеров:\nChrome 115+, Firefox 116+, Safari 17+\n"
+  },
+
+  "subgrid": {
+    "prefix": "s-subgrid",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      ".grid-container {",
+      "\t display: grid;",
+      "\t grid-template-columns: repeat(12, 1fr);",
+      "\t gap: 1rem;",
+      "}",
+      "",
+      ".nested-grid {",
+      "\t grid-column: span 4;",
+      "\t display: grid;",
+      "\t grid-template-columns: subgrid;",
+      "\t grid-template-rows: subgrid;",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<div class=\"grid-container\">\n\t<div class=\"nested-grid\">\n\t\t<div class=\"card\">\n\t\t\t<h2>Card Title</h2>\n\t\t\t<p>Description</p>\n\t\t</div>\n\t\t<div class=\"card\">\n\t\t\t<h2>Another Card</h2>\n\t\t\t<p>More content</p>\n\t\t</div>\n\t</div>\n\t<div class=\"content\">\n\t\t<h1>Main Content</h1>\n\t\t<p>Primary content area...</p>\n\t</div>\n</div>\n\n/* Additional Styles:\n.grid-container {\n\tmax-width: 1200px;\n\tmargin: 0 auto;\n\tpadding: 1rem;\n}\n\n// Адаптивная сетка\n@media (max-width: 768px) {\n\t.nested-grid {\n\t\tgrid-column: 1 / -1;\n\t}\n}\n\n// Карточки внутри подсетки\n.card {\n\tpadding: 1rem;\n\tbackground: #f5f5f5;\n\tborder-radius: 8px;\n}\n\n// Выравнивание по сетке\n.content {\n\tgrid-column: span 8;\n}\n*/\n\nEnglish:\nImplements CSS Subgrid, allowing nested grid containers to align with the parent grid's tracks. Perfect for complex layouts where child elements need to maintain alignment with the parent grid, regardless of their nesting level. Especially useful for card layouts, forms, and content organization.\n\nРусский:\nРеализует CSS Subgrid, позволяя вложенным grid-контейнерам выравниваться по линиям родительской сетки. Идеально подходит для сложных макетов, где дочерние элементы должны сохранять выравнивание с родительской сеткой независимо от уровня вложенности. Особенно полезно для макетов карточек, форм и организации контента.\n\nBrowser Support/Поддержка браузеров:\nFirefox 71+, Chrome 117+, Safari 16+\n\nUsage Notes/Примечания:\n- Subgrid работает как для columns, так и для rows\n- Можно использовать только для одного измерения (только строки или только столбцы)\n- Элементы подсетки наследуют размеры треков от родительской сетки"
+  },
+
+  "view-transitions": {
+    "prefix": "s-view-transition",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      "::view-transition-old(root) {",
+      "\t animation: fade-out 0.5s ease-out;",
+      "}",
+      "",
+      "::view-transition-new(root) {",
+      "\t animation: fade-in 0.5s ease-in;",
+      "}",
+      "",
+      "@keyframes fade-in {",
+      "\t from {",
+      "\t\t opacity: 0;",
+      "\t\t transform: translateY(20px);",
+      "\t }",
+      "}",
+      "",
+      "@keyframes fade-out {",
+      "\t to {",
+      "\t\t opacity: 0;",
+      "\t\t transform: translateY(-20px);",
+      "\t }",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<header>\n\t<h1 view-transition-name=\"header\">Page Title</h1>\n</header>\n<main>\n\t<article view-transition-name=\"content\">\n\t\t<h2>Article Title</h2>\n\t\t<p>Content...</p>\n\t</article>\n</main>\n\n/* JavaScript:\ndocument.startViewTransition(() => {\n\t// Обновление DOM\n\tupdateContent();\n});\n*/\n\n/* Additional Styles:\n// Специфичные переходы для элементов\n::view-transition-old(header),\n::view-transition-new(header) {\n\theight: 100%;\n\tobject-fit: cover;\n}\n\n// Слайд анимация\n@keyframes slide-in {\n\tfrom {\n\t\ttransform: translateX(100%);\n\t}\n}\n\n@keyframes slide-out {\n\tto {\n\t\ttransform: translateX(-100%);\n\t}\n}\n\n// Различные эффекты перехода\n.zoom-transition::view-transition-new(content) {\n\tanimation: 0.6s ease-out both zoom-in;\n}\n\n@keyframes zoom-in {\n\tfrom {\n\t\ttransform: scale(0.8);\n\t\topacity: 0;\n\t}\n}\n*/\n\nEnglish:\nImplements the View Transitions API for smooth transitions between UI states or page changes. Enables sophisticated animations when updating content or navigating between pages. Perfect for creating native-app-like experiences on the web.\n\nРусский:\nРеализует View Transitions API для плавных переходов между состояниями UI или при смене страниц. Позволяет создавать сложные анимации при обновлении контента или навигации между страницами. Идеально подходит для создания опыта, похожего на нативные приложения.\n\nBrowser Support/Поддержка браузеров:\nChrome 111+, Safari TP, Firefox in development\n\nUsage Notes/Примечания:\n- Требует JavaScript для активации переходов\n- Можно настраивать анимации для отдельных элементов\n- Поддерживает различные типы анимаций"
+  },
+
+  "modern-reset": {
+    "prefix": "s-modern-reset",
+    "scope": "css,scss,postcss,less",
+    "body": [
+      "*, *::before, *::after {",
+      "\t margin: 0;",
+      "\t padding: 0;",
+      "\t box-sizing: border-box;",
+      "}",
+      "",
+      "html {",
+      "\t text-size-adjust: none;",
+      "\t -webkit-text-size-adjust: none;",
+      "}",
+      "",
+      "body {",
+      "\t min-height: 100dvh;",
+      "\t line-height: 1.5;",
+      "\t text-rendering: optimizeSpeed;",
+      "}",
+      "",
+      "img, picture, video, canvas, svg {",
+      "\t display: block;",
+      "\t max-width: 100%;",
+      "}",
+      "",
+      "@media (prefers-reduced-motion: reduce) {",
+      "\t *, *::before, *::after {",
+      "\t\t animation-duration: 0.01ms !important;",
+      "\t\t animation-iteration-count: 1 !important;",
+      "\t\t transition-duration: 0.01ms !important;",
+      "\t\t scroll-behavior: auto !important;",
+      "\t }",
+      "}"
+    ],
+    "description": "Example/Пример:\n\n<!-- HTML Structure -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Modern Website</title>\n\t<link rel=\"stylesheet\" href=\"modern-reset.css\">\n\t<link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n\t<main>\n\t\t<h1>Content</h1>\n\t\t<img src=\"image.jpg\" alt=\"Example\">\n\t</main>\n</body>\n</html>\n\n/* Additional Styles:\n// Дополнительные правила для форм\ninput, button, textarea, select {\n\tfont: inherit;\n}\n\n// Улучшение доступности\n:focus-visible {\n\toutline: 2px solid #000;\n\toutline-offset: 2px;\n}\n\n// Скрытие для скринридеров\n.sr-only {\n\tposition: absolute;\n\twidth: 1px;\n\theight: 1px;\n\tpadding: 0;\n\tmargin: -1px;\n\toverflow: hidden;\n\tclip: rect(0,0,0,0);\n\tborder: 0;\n}\n*/\n\nEnglish:\nA modern CSS reset using the latest CSS features and best practices. Includes dynamic viewport units, optimized media queries, and accessibility improvements. Provides a clean foundation for modern web development.\n\nРусский:\nСовременный CSS reset, использующий последние возможности CSS и лучшие практики. Включает динамические единицы viewport, оптимизированные медиа-запросы и улучшения доступности. Обеспечивает чистую основу для современной веб-разработки.\n\nBrowser Support/Поддержка браузеров:\nAll modern browsers/Все современные браузеры\n\nUsage Notes/Примечания:\n- Использует современные viewport units (dvh, svh, lvh)\n- Оптимизирован для производительности\n- Учитывает предпочтения пользователя по уменьшению движения"
   }
 }
