@@ -2,9 +2,9 @@
 
 ![CSSence Logo](images/icon.png)
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/PavelMelnik.cssence.svg?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
-[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/PavelMelnik.cssence.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/PavelMelnik.cssence.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/PavelMelnik.cssence?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/PavelMelnik.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/PavelMelnik.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
 
 ## Overview
 
@@ -36,31 +36,31 @@ Sets up complete design system variables.
 
 | Prefix | Description |
 |--------|-------------|
-| `!init` | 🎯 Полная инициализация проекта с типографикой, root-переменными и базовыми HTML-оптимизациями |
-| `s-full-bg` | 🖼️ Полноэкранный респонсивный фоновый рисунок |
-| `s-center-flex` | 📍 Центрирование через flexbox |
-| `s-center-absolute` | 📌 Абсолютное центрирование через transform |
-| `s-div.background` | 🎨 DIV с фоновым изображением и фиксацией при прокрутке |
-| `s-media-min` | 📱 Медиа-запрос min-width (Mobile First) |
-| `s-media-max` | 💻 Медиа-запрос max-width (Desktop First) |
-| `s-animation` | ✨ Шаблон CSS-анимации с keyframes |
-| `s-theme-toggle` | 🌓 Переключение светлой/темной темы |
-| `s-aspect-ratio` | 📐 Фиксированное соотношение сторон (16:9) |
-| `s-tooltip` | 💬 Всплывающая подсказка с плавной анимацией |
-| `s-card-hover` | 🃏 Карточка с эффектом при наведении |
-| `s-hamburger-menu` | 🍔 Анимированное гамбургер-меню |
-| `s-input-floating` | ✍️ Поле ввода с плавающим лейблом |
-| `s-skeleton-loading` | ⌛ Скелетон-загрузчик с анимацией |
-| `s-scroll-snap` | 📜 Контейнер с привязкой прокрутки |
-| `s-gradient-text` | 🌈 Текст с анимированным градиентом |
-| `s-custom-scrollbar-minimal` | 📊 Минималистичный скроллбар |
-| `s-grid-container` | 🏗️ Адаптивный grid-контейнер |
-| `s-truncate-text` | ✂️ Обрезка текста с многоточием |
-| `s-glassmorphism` | 🌫️ Эффект матового стекла |
-| `s-responsive-image` | 🖼️ Адаптивное изображение |
-| `s-smooth-transition` | 🔄 Плавный эффект перехода |
-| `s-custom-checkbox` | ☑️ Кастомный чекбокс с анимацией |
-| `s-loading-spinner` | 🔄 Анимированный спиннер загрузки |
+| `!init` | 🎯 Complete project initialization with typography, root variables and basic HTML optimizations |
+| `s-full-bg` | 🖼️ Full-screen responsive background image |
+| `s-center-flex` | 📍 Centering elements using flexbox |
+| `s-center-absolute` | 📌 Absolute centering using transform |
+| `s-div.background` | 🎨 DIV with background image and scroll fixation |
+| `s-media-min` | 📱 Media query min-width (Mobile First) |
+| `s-media-max` | 💻 Media query max-width (Desktop First) |
+| `s-animation` | ✨ CSS animation template with keyframes |
+| `s-theme-toggle` | 🌓 Light/Dark theme toggle functionality |
+| `s-aspect-ratio` | 📐 Fixed aspect ratio (16:9) container |
+| `s-tooltip` | 💬 Tooltip with smooth animation |
+| `s-card-hover` | 🃏 Card with hover effect animation |
+| `s-hamburger-menu` | 🍔 Animated hamburger menu button |
+| `s-input-floating` | ✍️ Input field with floating label |
+| `s-skeleton-loading` | ⌛ Skeleton loading animation |
+| `s-scroll-snap` | 📜 Container with scroll snap functionality |
+| `s-gradient-text` | 🌈 Text with animated gradient effect |
+| `s-custom-scrollbar-minimal` | 📊 Minimal custom scrollbar design |
+| `s-grid-container` | 🏗️ Responsive grid container |
+| `s-truncate-text` | ✂️ Text truncation with ellipsis |
+| `s-glassmorphism` | 🌫️ Frosted glass effect |
+| `s-responsive-image` | 🖼️ Responsive image handling |
+| `s-smooth-transition` | 🔄 Smooth transition effect |
+| `s-custom-checkbox` | ☑️ Custom animated checkbox |
+| `s-loading-spinner` | 🔄 Animated loading spinner |
 
 ## Usage
 
