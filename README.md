@@ -36,7 +36,7 @@ Sets up complete design system variables.
 
 | Prefix | Description |
 |--------|-------------|
-| `!init` | 🎯 Complete project initialization with typography, root variables and basic HTML optimizations |
+| `!init` | 🎯 Complete project initialization with typography, root variables and basic HTML optimizations (Ant Desing based) |
 | `s-full-bg` | 🖼️ Full-screen responsive background image |
 | `s-center-flex` | 📍 Centering elements using flexbox |
 | `s-center-absolute` | 📌 Absolute centering using transform |
