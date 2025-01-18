@@ -2,9 +2,9 @@
 
 ![CSSence Logo](images/icon.png)
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/PavelMelnik.cssence?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
-[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/PavelMelnik.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/PavelMelnik.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/PavelMelnik94.cssence?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik94.cssence)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/PavelMelnik94.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik94.cssence)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/PavelMelnik94.cssence?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik94.cssence)
 
 ## Overview
 
