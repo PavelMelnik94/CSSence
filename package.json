@@ -40,7 +40,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/pavelmelnik94/CSSence"
+        "url": "https://github.com/PavelMelnik94/CSSence"
     },
     "keywords": [
         "css",
@@ -54,9 +54,9 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pavelmelnik94/CSSence/issues"
+        "url": "https://github.com/PavelMelnik94/CSSence/issues"
     },
-    "homepage": "https://github.com/pavelmelnik94/CSSence#readme",
+    "homepage": "https://github.com/PavelMelnik94/CSSence#readme",
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#1890ff",

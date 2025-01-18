@@ -1,19 +1,14 @@
 {
-  "root-full": {
-    "prefix": "root-full",
+  "init-project": {
+    "prefix": "!init",
     "scope": "css,scss,postcss,less",
     "body": [
-      "/* Roboto */",
+      "/* Font Imports */",
       "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');",
       "",
-      "/* Open Sans */",
-      "@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');",
-      "",
-      "/* Nunito Sans */",
-      "@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,700&display=swap');",
-      "",
+      "/* Root Variables */",
       ":root {",
-      "\t /* Colors - существующие переменные с новыми значениями */",
+      "\t /* Colors - Main */",
       "\t --color-primary: #1890ff;",
       "\t --color-secondary: #8c8c8c;",
       "\t --color-success: #52c41a;",
@@ -24,7 +19,7 @@
       "\t --color-dark: #141414;",
       "\t --color-white: #ffffff;",
       "\t",
-      "\t /* Дополнительные цвета Ant Design */",
+      "\t /* Colors - Text and UI */",
       "\t --color-text-primary: rgba(0, 0, 0, 0.85);",
       "\t --color-text-secondary: rgba(0, 0, 0, 0.45);",
       "\t --color-text-disabled: rgba(0, 0, 0, 0.25);",
@@ -35,7 +30,7 @@
       "\t --color-disabled: rgba(0, 0, 0, 0.04);",
       "\t --color-hover: rgba(0, 0, 0, 0.02);",
       "\t",
-      "\t /* Состояния компонентов */",
+      "\t /* Colors - Component States */",
       "\t --color-primary-hover: #40a9ff;",
       "\t --color-primary-active: #096dd9;",
       "\t --color-primary-outline: rgba(24, 144, 255, 0.2);",
@@ -44,36 +39,32 @@
       "\t --color-success-hover: #73d13d;",
       "\t --color-success-active: #389e0d;",
       "\t",
-      "\t /* Typography - существующие переменные */",
+      "\t /* Typography */",
       "\t --regular: 400;",
       "\t --bold: 700;",
       "\t --font-roboto: 'Roboto', sans-serif;",
-      "\t --font-open-sans: 'Open Sans', sans-serif;",
-      "\t --font-nunito-sans: 'Nunito Sans', sans-serif;",
-      "\t",
-      "\t /* Дополнительная типографика Ant Design */",
       "\t --font-size-xs: 0.75rem;     /* 12px */",
       "\t --font-size-sm: 0.875rem;    /* 14px */",
       "\t --font-size-base: 1rem;      /* 16px */",
       "\t --font-size-lg: 1.125rem;    /* 18px */",
       "\t --font-size-xl: 1.25rem;     /* 20px */",
+      "\t",
+      "\t /* Line Heights */",
       "\t --line-height-tight: 1.4;",
       "\t --line-height-base: 1.5715;",
       "\t --line-height-loose: 1.7142857;",
       "\t",
-      "\t /* Spacing - существующие переменные с значениями Ant Design */",
+      "\t /* Spacing */",
+      "\t --spacing-xxs: 0.25rem;    /* 4px */",
       "\t --spacing-xs: 0.5rem;      /* 8px */",
       "\t --spacing-s: 0.75rem;      /* 12px */",
       "\t --spacing-m: 1rem;         /* 16px */",
       "\t --spacing-l: 1.5rem;       /* 24px */",
       "\t --spacing-xl: 2rem;        /* 32px */",
-      "\t",
-      "\t /* Дополнительные отступы Ant Design */",
-      "\t --spacing-xxs: 0.25rem;    /* 4px */",
       "\t --spacing-xxl: 3rem;       /* 48px */",
       "\t --spacing-xxxl: 4rem;      /* 64px */",
       "\t",
-      "\t /* Border Radius - существующие переменные с значениями Ant Design */",
+      "\t /* Border Radius */",
       "\t --radii-xs: 0.125rem;     /* 2px */",
       "\t --radii-s: 0.25rem;       /* 4px */",
       "\t --radii-m: 0.5rem;        /* 8px */",
@@ -81,20 +72,20 @@
       "\t --radii-xl: 2rem;         /* 32px */",
       "\t --radii-round: 50%;",
       "\t",
-      "\t /* Тени (Box Shadows) */",
+      "\t /* Shadows */",
       "\t --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.03);",
       "\t --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);",
       "\t --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);",
       "\t --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);",
       "\t --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);",
       "\t",
-      "\t /* Переходы (Transitions) */",
+      "\t /* Transitions */",
       "\t --transition-duration: 0.2s;",
       "\t --transition-duration-slow: 0.3s;",
       "\t --transition-duration-fast: 0.1s;",
       "\t --transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1);",
       "\t",
-      "\t /* Z-индексы */",
+      "\t /* Z-index Scale */",
       "\t --z-index-dropdown: 1050;",
       "\t --z-index-sticky: 1020;",
       "\t --z-index-fixed: 1030;",
@@ -103,13 +94,7 @@
       "\t --z-index-popover: 1070;",
       "\t --z-index-tooltip: 1080;",
       "\t",
-      "\t /* Границы */",
-      "\t --border-width: 1px;",
-      "\t --border-width-focused: 2px;",
-      "\t --border-style: solid;",
-      "\t --border-color: var(--color-border);",
-      "\t",
-      "\t /* Сетка (Grid) */",
+      "\t /* Grid */",
       "\t --grid-columns: 24;",
       "\t --grid-gutter: 0.5rem;",
       "\t --container-padding: 1rem;",
@@ -121,56 +106,47 @@
       "\t --breakpoint-lg: 992px;",
       "\t --breakpoint-xl: 1200px;",
       "\t --breakpoint-xxl: 1600px;",
-      "}"
-    ],
-    "description": "Create full root selector variables with complete Ant Design system"
-  },
-
-  "base-html": {
-    "prefix": "base-html",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      "/* Prevent font scaling in landscape while allowing user zoom */",
-      "@-ms-viewport {",
-      "\t width: device-width;",
       "}",
       "",
-      "/* Reset box-sizing */",
+      "/* Base Reset and Typography */",
       "*, *::before, *::after {",
       "\t box-sizing: border-box;",
       "\t margin: 0;",
       "\t padding: 0;",
       "}",
       "",
-      "/* Basic HTML and Body setup */",
+      "/* Responsive Typography */",
+      "h1, .h1 { font-size: clamp(30px, 8vw, 80px); }",
+      "h2, .h2 { font-size: clamp(22.5px, 6vw, 60px); }",
+      "h3, .h3 { font-size: clamp(18.75px, 5vw, 50px); }",
+      "h4, .h4 { font-size: clamp(11.25px, 3vw, 30px); }",
+      "h5, .h5 { font-size: clamp(9.375px, 2vw, 25px); }",
+      "h6, .h6 { font-size: clamp(10px, 2vw, 20px); }",
+      "",
+      "/* Base HTML Setup */",
       "html {",
       "\t height: 100%;",
-      "\t font-size: 100%; /* 16px */",
+      "\t font-size: 100%;",
       "\t -webkit-text-size-adjust: 100%;",
       "\t -webkit-tap-highlight-color: rgba(0, 0, 0, 0);",
-      "\t /* Prevent pull-to-refresh but allow overscroll glow effects */",
       "\t overscroll-behavior-y: none;",
-      "\t /* Enable smooth scrolling for browsers that support it */",
       "\t scroll-behavior: smooth;",
       "}",
       "",
       "body {",
       "\t height: 100%;",
-      "\t /* System Fonts */",
-      "\t font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;",
-      "\t font-size: 1rem;",
-      "\t line-height: 1.5;",
+      "\t font-family: var(--font-roboto);",
+      "\t font-size: var(--font-size-base);",
+      "\t line-height: var(--line-height-base);",
+      "\t color: var(--color-text-primary);",
+      "\t background-color: var(--color-background);",
       "\t -webkit-font-smoothing: antialiased;",
       "\t -moz-osx-font-smoothing: grayscale;",
       "\t text-rendering: optimizeLegibility;",
-      "\t /* Disable elastic scrolling on iOS */",
       "\t -webkit-overflow-scrolling: touch;",
-      "\t /* Prevent text inflation */",
       "\t -webkit-text-size-adjust: 100%;",
-      "\t /* Disable text selection by default */",
       "\t -webkit-user-select: none;",
       "\t user-select: none;",
-      "\t /* Disable double-tap to zoom */",
       "\t touch-action: manipulation;",
       "}",
       "",
@@ -180,24 +156,21 @@
       "\t user-select: text;",
       "}",
       "",
-      "/* Remove hover effects on mobile devices */",
+      "/* Mobile Optimizations */",
       "@media (hover: none) and (pointer: coarse) {",
-      "\t a:hover,",
-      "\t button:hover {",
+      "\t a:hover, button:hover {",
       "\t\t all: unset !important;",
-      "\t}",
+      "\t }",
       "}",
       "",
-      "/* iOS specific fixes */",
+      "/* iOS Fixes */",
       "@supports (-webkit-touch-callout: none) {",
-      "\t /* Prevent scroll issues on iOS */",
       "\t html, body {",
       "\t\t position: fixed;",
       "\t\t overflow: hidden;",
       "\t\t width: 100vw;",
       "\t\t height: 100vh;",
-      "\t}",
-      "\t /* Your scrollable container */",
+      "\t }",
       "\t .scroll-container {",
       "\t\t position: fixed;",
       "\t\t top: 0;",
@@ -206,42 +179,34 @@
       "\t\t bottom: 0;",
       "\t\t overflow-y: auto;",
       "\t\t -webkit-overflow-scrolling: touch;",
-      "\t}",
+      "\t }",
       "}",
       "",
-      "/* Remove focus outline for non-keyboard interactions */",
+      "/* Accessibility and Focus */",
       ":focus:not(:focus-visible) {",
       "\t outline: none;",
       "}",
       "",
-      "/* Preserve focus outline for keyboard navigation */",
       ":focus-visible {",
-      "\t outline: 2px solid var(--color-primary, #1890ff);",
+      "\t outline: 2px solid var(--color-primary);",
       "\t outline-offset: 2px;",
       "}",
       "",
-      "/* Improve performance */",
+      "/* Performance Optimizations */",
       "@media screen and (prefers-reduced-motion: reduce) {",
       "\t * {",
       "\t\t animation-duration: 0.01ms !important;",
       "\t\t animation-iteration-count: 1 !important;",
       "\t\t transition-duration: 0.01ms !important;",
       "\t\t scroll-behavior: auto !important;",
-      "\t}",
+      "\t }",
       "}"
     ],
-    "description": "Base HTML and Body optimizations for mobile and desktop, with iOS fixes and performance improvements"
-  },
-
-  "typo-pera": {
-    "prefix": "typo-pera",
-    "scope": "css,scss,postcss,less",
-    "body": ["p{font-size: clamp(10px, 2vw, 20px);}"],
-    "description": "Full Responcive Heddings"
+    "description": "Initialize project with complete CSS setup including typography, root variables, and base HTML optimizations"
   },
 
   "full-bg": {
-    "prefix": "full-bg",
+    "prefix": "s-full-bg",
     "scope": "css,scss,postcss,less",
     "body": [
       "html {",
@@ -252,11 +217,11 @@
       "\t background-size: cover;",
       "}"
     ],
-    "description": "Full Responcive Heddings"
+    "description": "Создает полноэкранный респонсивный фон для HTML-документа. Изображение автоматически масштабируется, сохраняя пропорции, и занимает весь экран с учетом различных браузеров."
   },
 
   "center-flex": {
-    "prefix": "center-flex",
+    "prefix": "s-center-flex",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$class{",
@@ -265,11 +230,11 @@
       "\t align-items: center;",
       "}"
     ],
-    "description": "horizontally and vertically center div using flex"
+    "description": "Центрирует содержимое элемента как по горизонтали, так и по вертикали, используя flexbox. Это современный и гибкий способ центрирования, который хорошо работает с различными типами контента."
   },
 
   "center-absolute": {
-    "prefix": "center-absolute",
+    "prefix": "s-center-absolute",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$class{",
@@ -279,55 +244,11 @@
       "\t transform: translate(-50%, -50%);",
       "}"
     ],
-    "description": "horizontally and vertically center div using position absolute"
-  },
-
-  "root-bootstrap-colors": {
-    "prefix": "root-bootstrap-colors",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      ":root{",
-      "\t --color-primary: #007bff;",
-      "\t --color-secondary: #6c757d;",
-      "\t --color-success: #28a745;",
-      "\t --color-danger: #dc3545;",
-      "\t --color-warning: #ffc107;",
-      "\t --color-info: #17a2b8;",
-      "\t --color-light: #f8f9fa;",
-      "\t --color-dark: #343a40;",
-      "\t --color-white: #ffffff;",
-      "}"
-    ],
-    "description": "Add Boostrap Colors to variables (root)"
-  },
-
-  "root-google-fonts": {
-    "prefix": "root-google-fonts",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      "/* Roboto */",
-      "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');",
-      "",
-      "/* Open Sans */",
-      "@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');",
-      "",
-      "/* Nunito Sans */",
-      "@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,700&display=swap');",
-      "",
-      ":root{",
-      "\t --regular: 400;",
-      "\t --bold: 700;",
-      "\t ",
-      "\t --font-roboto:'Roboto', sans-serif;",
-      "\t --font-open-sans:'Open Sans', sans-serif;",
-      "\t --font-nunito-sans: 'Nunito Sans', sans-serif;",
-      "}"
-    ],
-    "description": "Add google fonts to variables (root)"
+    "description": "Центрирует элемент абсолютным позиционированием с помощью transform. Этот метод подходит для случаев, когда flexbox не применим или нужно центрировать элемент относительно родителя с position: relative."
   },
 
   "div.background": {
-    "prefix": "div.background",
+    "prefix": "s-div.background",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$class{",
@@ -338,25 +259,25 @@
       "\t /* height: 500px; */",
       "}"
     ],
-    "description": "Add background Image to div"
+    "description": "Создает div с фоновым изображением, которое масштабируется под размер контейнера. Изображение фиксируется при прокрутке (background-attachment: fixed) и центрируется."
   },
 
   "media-min": {
-    "prefix": "media-min",
+    "prefix": "s-media-min",
     "scope": "css,scss,postcss,less",
     "body": ["@media only screen and (min-width: $1 ){", "\t $2", "}"],
-    "description": "Create media queries (min-width)"
+    "description": "Создает медиа-запрос для стилей, которые применяются при ширине экрана больше указанного значения. Полезно для адаптивного дизайна по принципу Mobile First."
   },
 
   "media-max": {
-    "prefix": "media-max",
+    "prefix": "s-media-max",
     "scope": "css,scss,postcss,less",
     "body": ["@media only screen and (max-width: $1 ){", "\t $2", "}"],
-    "description": "Create media queries (max-width)"
+    "description": "Создает медиа-запрос для стилей, которые применяются при ширине экрана меньше указанного значения. Используется для адаптации дизайна под мобильные устройства."
   },
 
   "animation": {
-    "prefix": "animation",
+    "prefix": "s-animation",
     "scope": "css,scss,postcss,less",
     "body": [
       "@keyframes $animation_name {",
@@ -368,11 +289,11 @@
       "\t }",
       "}"
     ],
-    "description": "Create a keyframe animation"
+    "description": "Создает шаблон для CSS-анимации с использованием @keyframes. Позволяет определить начальное (0%) и конечное (100%) состояния анимации."
   },
 
   "theme-toggle": {
-    "prefix": "theme-toggle",
+    "prefix": "s-theme-toggle",
     "scope": "css,scss,postcss,less",
     "body": [
       ":root {",
@@ -387,11 +308,11 @@
       "\t --text-secondary: #a7a7a7;",
       "}"
     ],
-    "description": "Theme toggle variables for light/dark mode"
+    "description": "Реализует переключение между светлой и темной темами с помощью CSS-переменных. Включает основные цветовые переменные для фона и текста в обеих темах."
   },
 
   "aspect-ratio": {
-    "prefix": "aspect-ratio",
+    "prefix": "s-aspect-ratio",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1 {",
@@ -400,11 +321,11 @@
       "\t object-fit: cover;",
       "}"
     ],
-    "description": "Maintain aspect ratio for media elements"
+    "description": "Устанавливает фиксированное соотношение сторон для элемента (по умолчанию 16:9). Полезно для изображений, видео и других медиа-элементов, чтобы избежать искажений при масштабировании."
   },
 
   "tooltip": {
-    "prefix": "tooltip",
+    "prefix": "s-tooltip",
     "scope": "css,scss,postcss,less",
     "body": [
       "[data-tooltip] {",
@@ -434,11 +355,11 @@
       "\t visibility: visible;",
       "}"
     ],
-    "description": "Simple CSS tooltip"
+    "description": "Создает всплывающую подсказку при наведении на элемент. Подсказка появляется плавно, поддерживает многострочный текст и автоматически центрируется относительно элемента."
   },
 
   "card-hover": {
-    "prefix": "card-hover",
+    "prefix": "s-card-hover",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1 {",
@@ -457,11 +378,11 @@
       "\t\t 0 2px 4px -1px rgba(0,0,0,0.06);",
       "}"
     ],
-    "description": "Card with hover effect"
+    "description": "Создает карточку с эффектом при наведении: плавное поднятие и появление тени. Использует переменные CSS для цветов и включает плавные переходы для всех эффектов."
   },
 
   "hamburger-menu": {
-    "prefix": "hamburger-menu",
+    "prefix": "s-hamburger-menu",
     "scope": "css,scss,postcss,less",
     "body": [
       ".hamburger {",
@@ -498,11 +419,11 @@
       "\t top: 9px;",
       "}"
     ],
-    "description": "Animated hamburger menu icon"
+    "description": "Создает анимированную иконку гамбургер-меню с тремя полосками, которые превращаются в крестик при активации. Включает плавные переходы и поддерживает состояния hover и active."
   },
 
   "input-floating": {
-    "prefix": "input-floating",
+    "prefix": "s-input-floating",
     "scope": "css,scss,postcss,less",
     "body": [
       ".form-group {",
@@ -539,11 +460,11 @@
       "\t color: var(--color-primary);",
       "}"
     ],
-    "description": "Floating label input field"
+    "description": "Создает поле ввода с плавающим лейблом в стиле Material Design. Лейбл перемещается вверх при фокусе или когда поле содержит текст."
   },
 
   "skeleton-loading": {
-    "prefix": "skeleton-loading",
+    "prefix": "s-skeleton-loading",
     "scope": "css,scss,postcss,less",
     "body": [
       "@keyframes skeleton-loading {",
@@ -563,11 +484,11 @@
       "\t min-height: 20px;",
       "}"
     ],
-    "description": "Skeleton loading animation"
+    "description": "Создает анимированный скелетон-загрузчик с градиентным эффектом. Используется для отображения загружаемого контента и улучшения UX."
   },
 
   "scroll-snap": {
-    "prefix": "scroll-snap",
+    "prefix": "s-scroll-snap",
     "scope": "css,scss,postcss,less",
     "body": [
       ".scroll-container {",
@@ -585,11 +506,11 @@
       "\t height: 100%;",
       "}"
     ],
-    "description": "Smooth scroll snap container"
+    "description": "Реализует контейнер с горизонтальной прокруткой и привязкой к элементам. Обеспечивает плавную прокрутку и точную остановку на элементах."
   },
 
   "gradient-text": {
-    "prefix": "gradient-text",
+    "prefix": "s-gradient-text",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1 {",
@@ -607,11 +528,11 @@
       "\t 100% { background-position: 0% 50%; }",
       "}"
     ],
-    "description": "Animated gradient text"
+    "description": "Создает текст с анимированным градиентным фоном. Градиент плавно перемещается, создавая эффектный визуальный элемент."
   },
 
   "custom-scrollbar-minimal": {
-    "prefix": "custom-scrollbar-minimal",
+    "prefix": "s-custom-scrollbar-minimal",
     "scope": "css,scss,postcss,less",
     "body": [
       "* {",
@@ -636,11 +557,11 @@
       "\t background-color: #555;",
       "}"
     ],
-    "description": "Minimal custom scrollbar"
+    "description": "Стилизует полосу прокрутки, делая ее более тонкой и минималистичной. Поддерживает как WebKit, так и Firefox браузеры."
   },
 
   "grid-container": {
-    "prefix": "grid-container",
+    "prefix": "s-grid-container",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1{",
@@ -650,11 +571,11 @@
       "\t padding: 1rem;",
       "}"
     ],
-    "description": "Responsive grid container using auto-fit"
+    "description": "Создает адаптивный грид-контейнер с автоматическим размещением элементов. Колонки автоматически подстраиваются под доступное пространство."
   },
 
   "truncate-text": {
-    "prefix": "truncate-text",
+    "prefix": "s-truncate-text",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1{",
@@ -664,36 +585,11 @@
       "\t max-width: 100%;",
       "}"
     ],
-    "description": "Truncate text with ellipsis"
-  },
-
-  "scrollbar-custom": {
-    "prefix": "scrollbar-custom",
-    "scope": "css,scss,postcss,less",
-    "body": [
-      "/* Webkit browsers */",
-      ".$1::-webkit-scrollbar {",
-      "\t width: 8px;",
-      "}",
-      "",
-      ".$1::-webkit-scrollbar-track {",
-      "\t background: #f1f1f1;",
-      "}",
-      "",
-      ".$1::-webkit-scrollbar-thumb {",
-      "\t background: #888;",
-      "\t border-radius: 4px;",
-      "}",
-      "",
-      ".$1::-webkit-scrollbar-thumb:hover {",
-      "\t background: #555;",
-      "}"
-    ],
-    "description": "Custom scrollbar styling"
+    "description": "Обрезает текст, добавляя многоточие в конце, если он не помещается в контейнер. Текст остается в одной строке."
   },
 
   "glassmorphism": {
-    "prefix": "glassmorphism",
+    "prefix": "s-glassmorphism",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1{",
@@ -705,11 +601,11 @@
       "\t box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);",
       "}"
     ],
-    "description": "Glassmorphism effect"
+    "description": "Создает эффект матового стекла с размытием фона. Включает тонкую обводку и легкую тень для создания современного визуального эффекта."
   },
 
   "responsive-image": {
-    "prefix": "responsive-image",
+    "prefix": "s-responsive-image",
     "scope": "css,scss,postcss,less",
     "body": [
       "img.$1 {",
@@ -719,11 +615,11 @@
       "\t object-fit: cover;",
       "}"
     ],
-    "description": "Responsive image styling"
+    "description": "Делает изображение адаптивным, автоматически масштабируя его под размер контейнера при сохранении пропорций."
   },
 
   "smooth-transition": {
-    "prefix": "smooth-transition",
+    "prefix": "s-smooth-transition",
     "scope": "css,scss,postcss,less",
     "body": [
       ".$1 {",
@@ -735,11 +631,11 @@
       "\t box-shadow: 0 5px 15px rgba(0,0,0,0.3);",
       "}"
     ],
-    "description": "Smooth hover transition effect"
+    "description": "Добавляет плавный эффект перехода при наведении, включающий подъем элемента и появление тени. Все изменения происходят плавно."
   },
 
   "custom-checkbox": {
-    "prefix": "custom-checkbox",
+    "prefix": "s-custom-checkbox",
     "scope": "css,scss,postcss,less",
     "body": [
       ".checkbox-wrapper {",
@@ -793,11 +689,11 @@
       "\t transform: rotate(45deg);",
       "}"
     ],
-    "description": "Custom styled checkbox"
+    "description": "Создает кастомный чекбокс с анимированной галочкой. Включает состояния hover и checked, полностью настраиваемый внешний вид."
   },
 
   "loading-spinner": {
-    "prefix": "loading-spinner",
+    "prefix": "s-loading-spinner",
     "scope": "css,scss,postcss,less",
     "body": [
       "@keyframes spinner {",
@@ -813,6 +709,6 @@
       "\t animation: spinner 1s linear infinite;",
       "}"
     ],
-    "description": "Loading spinner animation"
+    "description": "Создает анимированный спиннер загрузки в виде вращающегося круга. Использует CSS-переменные для цветов и поддерживает кастомизацию."
   }
 }

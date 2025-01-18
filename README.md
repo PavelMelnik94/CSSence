@@ -30,40 +30,42 @@ CSSence is a powerful VS Code extension providing a comprehensive collection of 
 
 ### 🚀 Quick Start Snippets
 
-#### Base HTML/Body Setup
-
-```scss
-base-html⇥
-```
-
-Outputs optimized HTML and Body configurations with mobile fixes.
-
-#### Root Variables
-
-```scss
-root-full⇥
-```
-
 Sets up complete design system variables.
 
 ### 📦 Main Snippets
 
 | Prefix | Description |
 |--------|-------------|
-| `base-html` | Optimized HTML/Body base configuration |
-| `root-full` | Complete root variables setup |
-
-## Installation
-
-1. Open VS Code
-2. Press `Ctrl+P` / `Cmd+P`
-3. Type: `ext install PavelMelnik.cssence`
-4. Press Enter
+| `!init` | 🎯 Полная инициализация проекта с типографикой, root-переменными и базовыми HTML-оптимизациями |
+| `s-full-bg` | 🖼️ Полноэкранный респонсивный фоновый рисунок |
+| `s-center-flex` | 📍 Центрирование через flexbox |
+| `s-center-absolute` | 📌 Абсолютное центрирование через transform |
+| `s-div.background` | 🎨 DIV с фоновым изображением и фиксацией при прокрутке |
+| `s-media-min` | 📱 Медиа-запрос min-width (Mobile First) |
+| `s-media-max` | 💻 Медиа-запрос max-width (Desktop First) |
+| `s-animation` | ✨ Шаблон CSS-анимации с keyframes |
+| `s-theme-toggle` | 🌓 Переключение светлой/темной темы |
+| `s-aspect-ratio` | 📐 Фиксированное соотношение сторон (16:9) |
+| `s-tooltip` | 💬 Всплывающая подсказка с плавной анимацией |
+| `s-card-hover` | 🃏 Карточка с эффектом при наведении |
+| `s-hamburger-menu` | 🍔 Анимированное гамбургер-меню |
+| `s-input-floating` | ✍️ Поле ввода с плавающим лейблом |
+| `s-skeleton-loading` | ⌛ Скелетон-загрузчик с анимацией |
+| `s-scroll-snap` | 📜 Контейнер с привязкой прокрутки |
+| `s-gradient-text` | 🌈 Текст с анимированным градиентом |
+| `s-custom-scrollbar-minimal` | 📊 Минималистичный скроллбар |
+| `s-grid-container` | 🏗️ Адаптивный grid-контейнер |
+| `s-truncate-text` | ✂️ Обрезка текста с многоточием |
+| `s-glassmorphism` | 🌫️ Эффект матового стекла |
+| `s-responsive-image` | 🖼️ Адаптивное изображение |
+| `s-smooth-transition` | 🔄 Плавный эффект перехода |
+| `s-custom-checkbox` | ☑️ Кастомный чекбокс с анимацией |
+| `s-loading-spinner` | 🔄 Анимированный спиннер загрузки |
 
 ## Usage
 
 1. Open any CSS/SCSS file
-2. Type snippet prefix (e.g., `root-full`)
+2. Type snippet prefix (e.g., `!init`)
 3. Press `Tab` or `Enter`
 
 ## Supported Languages
@@ -72,37 +74,6 @@ Sets up complete design system variables.
 - SCSS
 - CSS Modules
 - SCSS Modules
-
-## Examples
-
-### Setting up root variables
-
-```scss
-root-full⇥
-
-:root {
-  /*Colors */
-  --color-primary: #1890ff;
-  --color-success: #52c41a;
-  /* ... more variables*/
-}
-```
-
-### Optimized base configuration
-
-```scss
-base-html⇥
-
-html {
-  /*Mobile optimizations */
-  -webkit-text-size-adjust: 100%;
-  /* ... more optimizations*/
-}
-```
-
-## Best Practices
-
-### Mobile-First Development
 
 ```scss
 // Use the provided media query helpers
@@ -128,20 +99,12 @@ html {
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-## Roadmap
-
-- [ ] Additional component snippets
-- [ ] Dark mode utilities
-- [ ] Animation presets
-- [ ] Custom themes support
-- [ ] RTL support
-
 ## Support
 
 If you encounter any issues or have suggestions:
 
 - [Create an issue](https://github.com/pavelmelnik94/CSSence/issues)
-- [Email support](mailto:info@dinujaya.me)
+- [Email support](mailto:recyclesordie94@gmail.com)
 
 ## License
 
