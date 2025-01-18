@@ -7,55 +7,38 @@
     "engines": {
         "vscode": "^1.67.0"
     },
-    "author": {
-        "name": "Pavel Melnik"
-    },
     "categories": [
         "Snippets"
     ],
-    "icon": "images/CSSence.svg",
-    "license": "SEE LICENSE IN LICENSE.txt",
-    "bugs": {
-        "url": "https://github.com/pavelmelnik94/CSSence/issues",
-        "email": "recyclesordie94@gmail.com"
+    "activationEvents": [
+        "onLanguage:css",
+        "onLanguage:scss"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "css",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/pavelmelnik94/CSSence"
     },
-    "homepage": "https://github.com/pavelmelnik94/CSSence/blob/main/README.md",
     "keywords": [
         "css",
         "scss",
         "snippets",
         "css snippets",
-        "scss snippets",
-        "ant design",
-        "antd",
-        "css modules",
-        "scss modules",
-        "css variables",
-        "css utils",
-        "css helpers",
-        "css boilerplate",
-        "responsive",
-        "mobile-first",
-        "ios fixes",
-        "frontend",
-        "web development",
-        "styling",
-        "style utilities",
-        "css framework",
-        "design system",
-        "optimization",
-        "performance",
-        "accessibility",
-        "a11y",
-        "dark mode",
-        "themes",
-        "layout",
-        "typography",
-        "grid",
-        "flexbox"
-    ]
+        "scss snippets"
+    ],
+    "author": {
+        "name": "Pavel Melnik"
+    },
+    "license": "MIT"
 }

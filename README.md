@@ -1,6 +1,6 @@
 # CSSence - Advanced CSS/SCSS Snippets
 
-![CSSence Logo](images/icon.png)
+![CSSence Logo](images/CSSence.png)
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/PavelMelnik.cssence.svg?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/PavelMelnik.cssence.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=PavelMelnik.cssence)
