@@ -1,6 +1,6 @@
 {
-    "name": "cssence",
-    "displayName": "CSSence",
+    "name": "cssence_extended",
+    "displayName": "CSSence-extended",
     "description": "This extension includes Snippets that you need to code very easily in css",
     "version": "0.0.2",
     "publisher": "PavelMelnik94",
@@ -9,10 +9,6 @@
     },
     "categories": [
         "Snippets"
-    ],
-    "activationEvents": [
-        "onLanguage:css",
-        "onLanguage:scss"
     ],
     "contributes": {
         "snippets": [
@@ -40,5 +36,17 @@
     "author": {
         "name": "Pavel Melnik"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pavelmelnik94/CSSence/issues"
+    },
+    "homepage": "https://github.com/pavelmelnik94/CSSence#readme",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#1890ff",
+        "theme": "dark"
+    },
+    "scripts": {
+        "publish": "vsce publish"
+    }
 }
