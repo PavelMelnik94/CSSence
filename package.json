@@ -2,7 +2,7 @@
     "name": "cssence",
     "displayName": "CSSence",
     "description": "This extension includes Snippets that you need to code very easily in css",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "PavelMelnik94",
     "engines": {
         "vscode": "^1.67.0"
@@ -27,7 +27,12 @@
                 "editor.snippetSuggestions": {
                     "type": "string",
                     "default": "top",
-                    "enum": [ "top", "bottom", "inline", "none" ],
+                    "enum": [
+                        "top",
+                        "bottom",
+                        "inline",
+                        "none"
+                    ],
                     "description": "Controls whether snippets are shown with other suggestions and how they are sorted."
                 }
             }
